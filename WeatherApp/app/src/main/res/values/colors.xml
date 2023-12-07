@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Blue01">#154F9E</color>
+    <color name="Blue02">#7BB9E7</color>
+    <color name="Sunrise">#E16B14</color>
+    <color name="ErrorRed">#FF1D25</color>
+
+    <color name="CardBG">#54000000</color>
+    <color name="PageBG_start">#154F9E</color>
+    <color name="PageBG_end">#7BB9E7</color>
+
+    <color name="TextSub_Header">#154F9E</color>
+
+    <color name="TextDisabled">#CED0D1</color>
+    <color name="TextEditField">#6D6E6F</color>
+    <color name="TextBody">#272425</color>
+
+<!--    <color name="TextDisabled">#4DFFFFFF</color>-->
+<!--    <color name="TextEditField">#B3FFFFFF</color>-->
+<!--    <color name="TextBody">#FFFFFF</color>-->
+
+</resources>
