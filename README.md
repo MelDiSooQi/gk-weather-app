@@ -17,11 +17,9 @@ With 3 hourly graph and Map with current location marker that have current locat
 ### App icon: </br>
 <img src="Screenshots/1-app-icon.jpg" width="270"/> </br>
 ### Splash icon: </br>
-<img src="Screenshots/2-splash-screen.jpg" width="300"/> </br>
-<img src="Screenshots/3-splash-screen-permission-1.jpg" width="300"/> </br>
-<img src="Screenshots/4-splash-screen-permission-2.jpg" width="300"/> </br>
+<img src="Screenshots/2-splash-screen.jpg" width="300"/> <img src="Screenshots/3-splash-screen-permission-1.jpg" width="300"/> <img src="Screenshots/4-splash-screen-permission-2.jpg" width="300"/> </br>
 ### Main screen: </br>
-<img src="Screenshots/2-main-screen-sunny.jpg" width="300" /> </br></br>
+<img src="Screenshots/5-main-screen.jpg" width="300" /> </br></br>
 ### Error message screen: </br>
 <img src="Screenshots/6-error-message-screen.jpg" width="300" /> </br></br>
 
