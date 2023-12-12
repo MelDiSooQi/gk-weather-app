@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+   <ImageView
+        android:id="@+id/weatherConditionIcon"
+        android:layout_width="@dimen/width_weatherConditionIcon_weatherData"
+        android:layout_height="@dimen/height_weatherConditionIcon_weatherData"
+        app:srcCompat="@drawable/few_clouds"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+       android:contentDescription="@string/weather_condition_icon" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/weatherConditionIcon"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/today"
+        android:inputType="textCapSentences"
+        android:fontFamily="@font/sourcesanspro_regular"/>
+
+    <TextView
+        android:id="@+id/weatherConditionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="@string/weatherConditionText_weatherData"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

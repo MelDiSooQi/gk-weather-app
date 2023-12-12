@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <string name="logo">logo</string>
+    <string name="permission_message_1"> to access your location?</string>
+    <string name="permission_message_2">You can turn this feature on or off in Settings.</string>
+    <string name="loading">Loading…</string>
+    <string name="location_settings">Check your location settings</string>
+    <string name="internet_connection">Check internet connection!</string>
+    <string name="location_permission">Check location permission!</string>
+    <string name="ok">OK</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="dialog_message">Dialog Message</string>
+    <string name="weather_app_is_unavailable">Weather App is unavailable</string>
+    <string name="weather_app_requires_permission_to_access_your_current_location_you_can_turn_this_function_on_in_settings">Weather App requires permission to access your current location, you can turn this function on in settings.</string>
+    <string name="go_to_settings">Go to settings</string>
+    <string name="weather_condition_icon">Weather Condition Icon</string>
+    <string name="today">Today</string>
+    <string name="weatherConditionText_weatherData">N/A N/Aº / N/Aº</string>
+    <string name="weather_status">Weather Status</string>
+    <string name="hourly_forecast">HOURLY FORECAST</string>
+    <string name="_5_day_forecast">5-DAY FORECAST</string>
+    <string name="n_a">N/Aº</string>
+    <string name="location">Location</string>
+    <string name="text_weatherConditionText_activityMain">N/A N/Aº / N/Aº</string>
+    <string name="location_details">Location details</string>
+    <string name="temperature">Temperature</string>
+    <string name="weather">Weather</string>
+    <string name="weather_description">Weather description</string>
+    <string name="error_message">Error Message</string>
+    <string name="check_your_location">Please, check your location settings</string>
+</resources>

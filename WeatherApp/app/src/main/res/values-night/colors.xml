@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <color name="TextDisabled">#4DFFFFFF</color>
-    <color name="TextEditField">#B3FFFFFF</color>
-    <color name="TextBody">#FFFFFF</color>
-
-</resources>

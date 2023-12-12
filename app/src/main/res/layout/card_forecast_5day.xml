@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_cardForecast5day"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card">
+
+    <TextView
+        android:id="@+id/cardHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStart_cardHeaderText"
+        android:layout_marginEnd="@dimen/marginEnd_cardHeaderText"
+        android:text="@string/_5_day_forecast"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_cardHeaderText"
+        android:fontFamily="@font/sourcesanspro_regular"/>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_dividerLine"
+        android:layout_below="@+id/cardHeaderText"
+        android:background="@color/white_opacity30"
+        android:layout_marginTop="@dimen/marginTop_dividerLine"/>
+
+    <TextView
+        android:id="@+id/weatherStatusText"
+        android:layout_below="@id/divider_line"
+        android:layout_marginTop="@dimen/marginTop_weatherStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/weather_status"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_weatherStatusText"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView5Days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@id/divider_line"
+        tools:itemCount="5"
+        tools:listitem="@layout/row_weather_data"
+        android:visibility="gone" />
+
+</RelativeLayout>

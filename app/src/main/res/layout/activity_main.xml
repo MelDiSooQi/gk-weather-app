@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:background="@drawable/bg_gradient">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_location_activityMain"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_marginTop="@dimen/marginTop_location_activityMain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/weatherConditionIcon"
+                android:layout_width="@dimen/width_weatherConditionIcon_activityMain"
+                android:layout_height="@dimen/height_weatherConditionIcon_activityMain"
+                android:contentDescription="@string/weather_condition_icon"
+                android:src="@drawable/clear_sky"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/location"/>
+
+            <TextView
+                android:id="@+id/ambientTemperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_ambientTemperatureText_activityMain"
+                android:fontFamily="@font/sourcesanspro_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherConditionIcon"/>
+
+            <TextView
+                android:id="@+id/weatherConditionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_weatherConditionText_activityMain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_weatherConditionText_activityMain"
+                android:fontFamily="@font/sourcesanspro_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ambientTemperatureText"/>
+
+            <include
+                android:id="@+id/card_forecast_5day"
+                layout="@layout/card_forecast_5day"
+                android:layout_width="@dimen/width_cardForecast5day_activityMain"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_cardForecast5day_activityMain"
+                android:layout_marginStart="@dimen/marginStart_cardForecast5day_activityMain"
+                android:layout_marginEnd="@dimen/marginEnd_cardForecast5day_activityMain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherConditionText"/>
+
+            <include
+                android:id="@+id/card_forecast_hourly"
+                layout="@layout/card_forecast_hourly"
+                android:layout_width="@dimen/width_cardForecastHourly_activityMain"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_cardForecastHourly_activityMain"
+                android:layout_marginStart="@dimen/marginStart_cardForecastHourly_activityMain"
+                android:layout_marginEnd="@dimen/marginEnd_cardForecastHourly_activityMain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_forecast_5day"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card_forecast_hourly">
+                    <include
+                        android:id="@+id/card_map"
+                        layout="@layout/card_map"
+                        android:layout_width="@dimen/width_cardMap_activityMain"
+                        android:layout_height="@dimen/height_cardMap_activityMain"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/marginTop_cardMap_activityMain"
+                        android:layout_marginBottom="@dimen/marginBottom_cardMap_activityMain"
+                        android:layout_marginStart="@dimen/marginStart_cardMap_activityMain"
+                        android:layout_marginEnd="@dimen/marginEnd_cardMap_activityMain"
+                        />
+                </RelativeLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
