@@ -38,13 +38,13 @@ With 3 hourly graph and Map with current location marker that have current locat
 - Request access to the user’s location upon app launch.</br>
 - Custom dialog</br>
 #### Main page:
-- Connect to the Weather API and lookup the weather conditions for the current location.</br>
+- Connect to the Weather API and look up the weather conditions for the current location.</br>
 - Display the current weather at the user’s location and a 5-day forecast.</br>
 - A loader should be shown to the user while they are waiting</br>
 - Any location or network errors handled and shown to the user.</br>
 - Allows you to click on the day and get more details.</br>
 - Allows you to view a 3 hourly temperature graph with Rain percentage and humidity percentage.</br>
-- Allows you to open map with marker of your current location.</br>
+- Allows you to open a map with a marker of your current location.</br>
 - Allows you to click on the marker and see location details with temperature.</br>
 
 #### Error Page page:
